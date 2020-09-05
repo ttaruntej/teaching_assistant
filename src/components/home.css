@@ -1,0 +1,282 @@
+.bg {
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    animation: tble 10.5s ease-out 1;
+
+}
+
+.cntr0 {
+    
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 4.6vw;
+    color: #7fffd4;
+    z-index: 3;
+    -webkit-animation: b30 10s ease 1;
+    animation: b30 10s ease infinite;
+    text-shadow: 2px 2px 4px #000;
+    cursor: url(http://cur.cursors-4u.net/others/oth-1/oth56.cur),auto!important;
+}
+
+.cntr1 {
+    
+    animation: b30 3s ease infinite;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+@keyframes b30{
+    0% {
+        color: #ff0;
+    }
+    25% {
+        color: #ff0;
+    }
+    50% {
+        color: #00ff37;
+    }
+    100% {
+        color: #7fffd4;
+    }
+}
+
+.overlay0 {
+   z-index: 3;
+    display: none;
+    transition: 3s ease;
+}
+
+
+
+.cntr0:hover .overlay0{
+     display: block;
+}
+.text0 {
+    text-decoration-line: overline underline;
+    /*background-image: linear-gradient(270deg,#7fffd4,violet,coral,#7fffd4);*/
+    text-decoration-color: white;
+    background-size:  40vw;
+    z-index: 1;
+    font-size: 2.5vw;
+    text-shadow: 0px 0px 0px ;
+   
+}
+
+.bg0{
+    top: 0;
+    left: 0;
+  z-index: 0;
+  opacity: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  
+}
+
+
+
+
+
+.book{
+    position: absolute;
+    /*top: 60%;*/
+    bottom: 0vh;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+    -webkit-animation: b2 12s linear infinite;
+    animation: b2 12s linear infinite;
+    z-index: 2;
+}
+
+@keyframes b2{
+    0% {
+        transform: translateX(-25vw);
+    }
+    50% {
+        transform: translateX(25vw);
+    }
+    100% {
+        transform: translateX(-25vw);
+    }
+}
+
+
+#bg1
+    {
+      margin: 0;
+      position: absolute;
+      top: 20%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50vw;
+      height: 70vh;
+      opacity: 0.2;   
+      position: fixed;  
+      animation: b1 9s ease-in-out infinite;
+      z-index: 0;
+    }
+    @keyframes b1{
+      0%{
+           transform: scaleX(1);
+      }
+      50%{
+        transform: scaleX(-0.5);
+       
+      }
+
+      100%{
+        transform: scaleX(-1);
+       
+      }
+     
+}
+
+
+
+.text10{
+    font-size: 4vw;
+    position: absolute;
+     bottom: 20vh;
+    color: salmon;
+    left: 20vw;
+    animation: t10 6s linear infinite;
+    opacity: 0;
+    z-index: 2;
+   }
+   .text11{
+     font-size: 4vw;
+    position: absolute;
+     bottom: 20vh;
+    color: seashell;
+    left: 45vw;
+    animation: t10 6s linear infinite;
+    opacity: 0;
+    z-index: 2;
+   }
+   .text12{
+     font-size: 4vw;
+     position: absolute;
+     bottom: 20vh;
+    color: springgreen;
+    left: 70vw;
+    animation: t10 6s linear infinite;
+    opacity: 0;
+    z-index: 2;
+
+   }
+
+   @keyframes t10{
+     0%{
+       opacity: 0;
+     }
+     50%{
+      opacity: 1;
+     }
+    100%{
+       opacity: 0;
+     }
+   }
+
+   #gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom: 40px;
+    right: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 26px;
+    border-radius: 50%;
+    z-index: 5;
+    display: none;
+  }
+  
+  .gtbh{
+    display: none;
+    position: fixed;
+    bottom: -25px;
+    right: 1px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    color: rgb(255, 47, 47);
+    font-family: Lucida Bright;
+    border-radius: 50%;
+    z-index: 5;
+  }
+  
+  #gotopbtn:hover+.gtbh{
+         display: block;
+  }
+  
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .book{
+        bottom: 15vh;
+    }
+    .text10,.text11,.text12{
+        bottom: 28vh;
+    }
+}
+
+
+@media only screen and (max-width: 670px) {
+    .cntr0{
+        position: absolute;
+    top: 30%;
+    left: 0rem;
+    right: 0rem;
+    transform: translate(0%,0%);
+    -ms-transform: translate(0%,0%);
+    font-size: 6.6vw;
+    color: #7fffd4;
+    z-index: 1;
+    -webkit-animation: b30 10s ease 1;
+    animation: b30 10s ease 1;
+    text-shadow: 2px 2px 4px #000;
+    cursor: url(http://cur.cursors-4u.net/others/oth-1/oth56.cur),auto!important;
+    }
+}
+
+
+@media only screen and (max-width: 370px) {
+    .cntr0{
+        position: absolute;
+    top: 40%;
+    left: 0rem;
+    right: 0rem;
+    transform: translate(0%,0%);
+    -ms-transform: translate(0%,0%);
+    font-size: 8.3vw;
+    color: #7fffd4;
+    z-index: 1;
+    -webkit-animation: b30 10s ease 1;
+    animation: b30 10s ease 1;
+    text-shadow: 2px 2px 4px #000;
+    cursor: url(http://cur.cursors-4u.net/others/oth-1/oth56.cur),auto!important;
+    }
+}
